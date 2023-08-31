@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<h1> Welcome angular {{pokemonList [0]}} </h1>` 
+  templateUrl: `app.component.html`, 
 })
 export class AppComponent implements OnInit {
 
@@ -13,10 +13,15 @@ export class AppComponent implements OnInit {
 
     console.log ("Je viens de charger!");
     console.table (this.pokemonList); 
+
+    this.selectPokemon (this.pokemonList [0]); 
+
   }
 
-  selectPokeon (): void {
-    
+  selectPokemon (pokemon: string): void {
+
+    console.log ("Vous avez selectionné ce pokemon : " + pokemon);
+
   }
 
 }
