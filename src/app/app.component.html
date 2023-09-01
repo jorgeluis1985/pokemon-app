@@ -1,4 +1,11 @@
 
 <h1> Liste de pokémon </h1>
 
- <p> {{pokemonList}}</p>
+
+
+<div   *ngFor="let pokemon of pokemonList"     class ="test">  
+
+    <p> {{ pokemon.name }} </p>
+
+</div>
+ 

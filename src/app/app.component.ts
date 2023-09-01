@@ -9,7 +9,7 @@ import { Pokemon } from './pokemons';
 export class AppComponent implements OnInit {
 
   title: string = 'pokemon-app';
-  pokemonList: string [] = ["Pikachu", "Salamèche", "Lippoutou"];
+  pokemonList: Pokemon [] = POKEMONS; 
 
   ngOnInit (): void {
 
@@ -20,9 +20,9 @@ export class AppComponent implements OnInit {
 
   }
 
-  selectPokemon (pokemon: string): void {
+  selectPokemon (pokemon: Pokemon): void {
 
-    console.log ("Vous avez selectionné ce pokemon : " + pokemon);
+    console.log ("Vous avez selectionné ce pokemon : " + pokemon.name);
 
   }
 
