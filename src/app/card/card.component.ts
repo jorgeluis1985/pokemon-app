@@ -1,30 +1,46 @@
 import { Component, OnInit } from '@angular/core';
-import { POKEMONS } from '../mock-pokemons-list';
-import { Pokemon } from '../pokemons';
-
+import {Pokemon} from "../pokemons";
+import {POKEMONS} from "../mock-pokemons-list";
 
 @Component({
   selector: 'app-card',
   templateUrl: `card.component.html`,
-
 })
-export class CardComponent implements OnInit {
+export class CardComponent implements OnInit{
 
   title: string = 'pokemon-app';
-  pokemonList: Pokemon [] = POKEMONS; 
+  pokemonList: Pokemon[] = POKEMONS;
+  pokemonSelected: Pokemon;
 
-  ngOnInit (): void {
+  ngOnInit() {
 
-    console.log ("Je viens de charger!");
-    console.table (this.pokemonList); 
+    console.log("Je viens de charger");
+    console.table(this.pokemonList);
 
-    this.selectPokemon (this.pokemonList [0]); 
+    this.selectPokemon(this.pokemonList[0]);
+
+
+  }
+
+
+
+
+  selectPokemon(pokemon: Pokemon) {
+
+    console.log("Vous avez selectioné ce pokemon : " + pokemon.name)
+
+    // console.log("Vous avez selectioné ce pokemon : " + pokemon.id)
 
   }
 
-  selectPokemon (pokemon: Pokemon): void {
+  afficheNumberPokemon(index: number) {
 
-    console.log ("Vous avez selectionné ce pokemon : " + pokemon.name);
+    this.pokemonSelected = this.pokemonList[index-1];
+
+    console.log("Vous avez rechercher ce pokemon : "  + this.pokemonSelected.name);
+
 
   }
+
+
 }
