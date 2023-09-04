@@ -40,7 +40,6 @@ export class CardComponent implements OnInit{
 
 
 
-
   selectPokemon(pokemon: Pokemon) {
 
     console.log("Vous avez selectioné ce pokemon : " + pokemon.name)

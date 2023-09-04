@@ -12,6 +12,7 @@ export class PokemonService {
     return POKEMONS; 
   }
 
-  
+
+
 
 }
