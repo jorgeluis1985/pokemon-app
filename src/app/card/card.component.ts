@@ -25,6 +25,9 @@ export class CardComponent implements OnInit{
     // this.selectPokemon(this.pokemonList[0]);
 
     this.getPokemon();
+
+    
+    
   }
   
   
