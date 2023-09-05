@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ArticleComponent } from './article/article.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Error404Component } from './error404/error404.component';
+import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Error404Component } from './error404/error404.component';
     HomeComponent,
     ArticleComponent,
     NavbarComponent,
-    Error404Component
+    Error404Component,
+    PokemonDetailsComponent
   ],
   imports: [
     BrowserModule,
