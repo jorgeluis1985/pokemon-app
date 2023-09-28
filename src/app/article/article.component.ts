@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ArticleComponent {
 
   afficheArticle(article: string) : void {
-    console.log("Vous avez selectionner cette article");
+    console.log("Vous avez selectionner cette article" + article);
   } 
 
   resultForm (form: string) : void {
