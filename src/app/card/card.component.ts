@@ -42,7 +42,7 @@ export class CardComponent implements OnInit{
 
   selectPokemon(pokemon: Pokemon) {
 
-    console.log("Vous avez selectioné ce pokemon : " + pokemon.name)
+    console.log("Vous avez selectioné  : " + pokemon.name)
 
     // console.log("Vous avez selectioné ce pokemon : " + pokemon.id)
 
@@ -52,7 +52,7 @@ export class CardComponent implements OnInit{
 
     this.pokemonSelected = this.pokemonList[index-1];
 
-    console.log("Vous avez rechercher ce pokemon : "  + this.pokemonSelected.name);
+    console.log("Vous avez rechercher : "  + this.pokemonSelected.name);
 
 
   }
